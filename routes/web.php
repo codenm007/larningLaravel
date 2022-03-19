@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/upload', [FileController::class,'upload']);
+Route::post('/upload', [App\Http\Controllers\FileController::class,'upload']);
 
 Auth::routes();
 
