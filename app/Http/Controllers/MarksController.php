@@ -49,8 +49,8 @@ class MarksController extends Controller
               } else {
                 $grades = "F";
               }
-              $message = "The percentage marks of student  ".$percentage."% and grade is ".$grades;
               
-              return $message;
+              return view("students", ["percentage"=>$percentage,"grades"=>$grades]);
+            
     }
 }
