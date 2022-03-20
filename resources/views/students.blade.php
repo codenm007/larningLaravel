@@ -31,7 +31,7 @@
                   
                   </div>
                   
-                   @if($errors)
+                   @if(sizeof($errors) != 0)
                     <div class="alert alert-danger">Please enter marks for all courses</div>
                    @endif
                 <button type="submit" class="btn btn-primary my-4" >Calculate Marks</button>
