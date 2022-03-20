@@ -20,6 +20,16 @@ class MarksController extends Controller
     //
     public function calculate(Request $request){
 
+            //input validation 
+                        
+            $request->validate([
+                'sub1' => ['required', 'numeric', 'max:100'],
+                'sub2' => ['required', 'numeric', 'max:100'],
+                'sub3' => ['required', 'numeric', 'max:100'],
+                'sub4' => ['required', 'numeric', 'max:100'],
+                'sub5' => ['required', 'numeric', 'max:100'],
+            ]);
+
              $request->input();
              $sub1 = $request->sub1;
              $sub2 = $request->sub2;

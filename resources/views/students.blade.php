@@ -50,6 +50,10 @@
                     <input type="text" class="form-control" id="sub5" name="sub5" placeholder="Enter subject 5 marks" aria-describedby="emailHelp">
                   
                   </div>
+                  
+                   @if($errors->first('sub1'))
+                    <div class="alert alert-danger">Please enter marks for all courses</div>
+                   @endif
                 <button type="submit" class="btn btn-primary my-4" >Calculate Marks</button>
               </form>
         </div>
